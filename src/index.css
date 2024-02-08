@@ -1,0 +1,205 @@
+:root {
+  --main-color: #343434;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.active {
+  font-weight: 900 !important;
+}
+
+/* Start Home */
+
+.icons a {
+  background-color: rgba(0, 0, 0, 0.37);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 35px;
+}
+.main-title {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+/* .title {
+  width: fit-content;
+} */
+.title::after {
+  content: "";
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  width: 80%;
+  height: 5px;
+  background-color: cadetblue;
+}
+.land {
+  height: 100vh;
+}
+.about {
+  min-height: 100vh;
+}
+.about-title {
+  position: relative;
+  /* width: fit-content; */
+  /* margin: auto; */
+}
+.about-main::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 33%;
+  width: 35%;
+  height: 5px;
+  background-color: cadetblue;
+}
+.main-title h2 {
+  font-weight: 800;
+}
+.main-title {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  z-index: 10;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-image: url(./Assets/Images/dots.png);
+  bottom: -5px;
+  z-index: -1;
+}
+/* Start Navs And Tabs */
+.nav-pills {
+  --bs-nav-pills-link-active-color: var(--main-color);
+  --bs-nav-pills-link-active-bg: transparent;
+}
+.nav-link {
+  --bs-nav-link-color: var(--main-color);
+}
+.works .nav-link:hover {
+  color: var(--main-color);
+}
+.works .nav-link.active {
+  position: relative;
+}
+.works .nav-link.active::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  background-color: rgb(255, 255, 255);
+  top: 5%;
+  left: 2.5%;
+  visibility: hidden;
+}
+.inner:hover::after {
+  top: 2.5%;
+  transition: top 0.4s ease-in-out;
+  visibility: visible;
+}
+.inner:hover .layer {
+  top: 0;
+  transition: 0.4s;
+}
+
+.por-icons-1 {
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+  color: white;
+  border-radius: 50%;
+}
+.por-icons-1:hover {
+  background-color: #ffffff;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+.por-icons-1 a {
+  color: white;
+}
+.por-icons-1:hover a {
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+/* Start About */
+.btn-download {
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #212529;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-bg: var(--main-color);
+  font-size: 14px;
+  transition: 0.5s;
+}
+.btn-contact {
+  font-size: 14px;
+  transition: 0.5s;
+}
+.hero-image::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(./Assets/Images/dots.png);
+  background-repeat: repeat;
+  top: 5%;
+  left: -5%;
+  z-index: -55;
+}
+
+/* Start Contact */
+
+.ver-one .icon-zero {
+  width: 65px;
+  height: 65px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  color: var(--main-color);
+}
+.icon-zero {
+  transition: all 0.4s;
+}
+.icon-zero:hover {
+  background-color: black;
+  color: white;
+}
+
+.in-1 {
+  background-color: #f4f4f4;
+}
+.in-2 {
+  background-color: #f4f4f4;
+}
+textarea {
+  resize: none;
+}
+
+.footer-content {
+  background-color: var(--main-color);
+}
